@@ -18,8 +18,8 @@
                     
                     <h4>Work</h4>
                     <input onclick="options('work')" class="ellipsis" type="image"src="time-tracking-dashboard-main\time-tracking-dashboard-main\images\icon-ellipsis.svg"> 
-                    <h2>14 hrs</h2>
-                    <p>Last week: 4hrs</p>
+                    <h2 class="current">14 hrs</h2>
+                    <p class="previous">Last week: 4hrs</p>
                 </div>
         </div>
 
@@ -29,8 +29,8 @@
                     
                     <h4>Play</h4>
                     <input onclick="options('play')" class="ellipsis" type="image"src="time-tracking-dashboard-main\time-tracking-dashboard-main\images\icon-ellipsis.svg"> 
-                    <h2>14 hrs</h2>
-                    <p>Last week: 4hrs</p>
+                    <h2 class="current">14 hrs</h2>
+                    <p class="previous">Last week: 4hrs</p>
                 </div>
         </div>
 
@@ -40,8 +40,8 @@
                     
                     <h4>Study</h4>
                     <input onclick="options('study')" class="ellipsis" type="image"src="time-tracking-dashboard-main\time-tracking-dashboard-main\images\icon-ellipsis.svg"> 
-                    <h2>14 hrs</h2>
-                    <p>Last week: 4hrs</p>
+                    <h2 class="current">14 hrs</h2>
+                    <p class="previous">Last week: 4hrs</p>
                 </div>
         </div>
 
@@ -51,8 +51,8 @@
                     
                     <h4>Exercise</h4>
                     <input onclick="options('exercise')" class="ellipsis" type="image"src="time-tracking-dashboard-main\time-tracking-dashboard-main\images\icon-ellipsis.svg"> 
-                    <h2>14 hrs</h2>
-                    <p>Last week: 4hrs</p>
+                    <h2 class="current">14 hrs</h2>
+                    <p class="previous">Last week: 4hrs</p>
                 </div>
         </div>
 
@@ -62,8 +62,8 @@
                     
                     <h4>Social</h4>
                     <input onclick="options('social')" class="ellipsis" type="image"src="time-tracking-dashboard-main\time-tracking-dashboard-main\images\icon-ellipsis.svg"> 
-                    <h2>14 hrs</h2>
-                    <p>Last week: 4hrs</p>
+                    <h2 class="current">14 hrs</h2>
+                    <p class="previous">Last week: 4hrs</p>
                 </div>
 
                 <div class = "outer" id="self_care_container" style="background-color: hsl(43, 84%, 65%);">
@@ -72,8 +72,8 @@
                             
                             <h4>Self Care</h4>
                             <input onclick="options('self care')" class="ellipsis" type="image"src="time-tracking-dashboard-main\time-tracking-dashboard-main\images\icon-ellipsis.svg"> 
-                            <h2>14 hrs</h2>
-                            <p>Last week: 4hrs</p>
+                            <h2 class="current">14 hrs</h2>
+                            <p class="previous">Last week: 4hrs</p>
                         </div>
                 </div>
 
@@ -88,11 +88,11 @@
         <p style="font-size: 12px;">Report for</p>
         <h2 style="font-size: 31px;">Jeremy Robson</h2>
         <div id="dates_container">
-            <button onclick="daily_info()" class="dates_buttons">Daily</button>
+            <button  id="daily" onclick="daily_info()" class="dates_buttons">Daily</button>
             <br>
-            <button onclick="weekly_info()" class="dates_buttons">Weekly</button>
+            <button  id="weekly" onclick="weekly_info()" class="dates_buttons">Weekly</button>
             <br>
-            <button onclick="monthly_info()" class="dates_buttons" style="margin-bottom: 24px;">Monthly</button>
+            <button  id="monthly" onclick="monthly_info()" class="dates_buttons" style="margin-bottom: 24px;">Monthly</button>
         </div>
     </div>
 
